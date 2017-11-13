@@ -5,7 +5,7 @@ object Main extends App {
   val abi = Abi("") // todo recommended way to run solc, in order to create ABI?
   val x = Generator.generateContractStub(
     baseClassName = "Fortune",
-    abi=abi,
+    abi = abi,
     async = true,
     fullyQualifiedPackageName = "com.mchange.test"
   )
