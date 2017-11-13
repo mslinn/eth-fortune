@@ -1,8 +1,6 @@
 .idea/
 *.class
 target/*
-project/project/*
-project/target/*
 .DS_Store
 tmp/*
 sbt-ethereum.log
