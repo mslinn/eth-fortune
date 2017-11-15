@@ -14,7 +14,8 @@ import scala.concurrent.ExecutionContext.Implicits.global
 
 object Main extends App {
   // Config basically
-  implicit val iContext: Invoker.Context = Invoker.Context( args(0) )
+  val nodeUrl = if (args.isEmpty) "http://localhost:8545" else args(0)
+  implicit val iContext: Invoker.Context = Invoker.Context( nodeUrl )
 
   // Who is interacting with the stubs? We're accessing a read-only method that is
   // independent of sender, so who cares?

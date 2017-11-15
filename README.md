@@ -12,7 +12,10 @@ The [Main program](https://github.com/mslinn/eth-fortune/blob/master/src/main/sc
 written in Scala, can transact using the contract.
 
 ## Running the Program
+If you are running a local Ethereum network, connect to it like this:
 
-    $ sbt "run something"
+    $ sbt "run http://localhost:8545"
 
-todo Steve: what is that special something?
+if you are using infura, and your token is `XXXXXXX`, the incantation would be something like:
+
+    $ sbt "run https://mainnet.infura.io/XXXXXXX"
